@@ -14,7 +14,7 @@ html {
 
 body {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #000000;
 }
 
@@ -41,7 +41,6 @@ nav {
   transition: background-color 0.6s;
   z-index: 1;
 }
-
 nav .nav-link,
 nav a {
   display: -webkit-box;
@@ -57,27 +56,22 @@ nav a {
   font-size: 20px;
   color: #fff;
 }
-
 nav .navbar-brand {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
 }
-
 nav .navbar-brand i {
   border-style: none;
 }
-
 nav a:hover {
   color: #fdb927 !important;
 }
-
 nav .fa-bars {
   padding: 10px;
   color: #fff;
   font-size: 30px;
 }
-
 nav .active {
   color: #fdb927;
 }
@@ -85,13 +79,11 @@ nav .active {
 header {
   color: #fff;
 }
-
 header h1 {
   text-transform: uppercase;
   font-size: 36px;
   padding: 20px;
 }
-
 header .hero-img {
   position: relative;
   height: 100vh;
@@ -101,7 +93,6 @@ header .hero-img {
   background-attachment: fixed;
   z-index: 0;
 }
-
 header .hero-shadow {
   position: absolute;
   width: 100%;
@@ -109,7 +100,6 @@ header .hero-shadow {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -10;
 }
-
 header .hero-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,7 +119,6 @@ header .hero-text {
   padding: 10px;
   text-align: center;
 }
-
 header .btn-outline-light {
   text-transform: uppercase;
   font-size: 20px;
@@ -137,7 +126,6 @@ header .btn-outline-light {
   border-radius: 8px;
   padding: 10px 20px;
 }
-
 header .fa-chevron-down {
   position: absolute;
   left: 50%;
@@ -163,7 +151,6 @@ header .fa-chevron-down {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .aboutme .card {
   position: relative;
   height: 400px;
@@ -177,7 +164,6 @@ header .fa-chevron-down {
   overflow: hidden;
   background-image: url("../img/IMG_8700-PL Dowód osobisty-35x45 mm.jpg");
 }
-
 .aboutme .card button {
   position: absolute;
   top: 10px;
@@ -190,12 +176,10 @@ header .fa-chevron-down {
   cursor: crosshair;
   z-index: 10;
 }
-
 .aboutme .card button:hover ~ .text {
   -webkit-clip-path: circle(120% at 50% 90%);
           clip-path: circle(120% at 50% 90%);
 }
-
 .aboutme .card .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +209,6 @@ header .fa-chevron-down {
   transition: clip-path 0.8s;
   transition: clip-path 0.8s, -webkit-clip-path 0.8s;
 }
-
 .aboutme .card .text h1 {
   color: #fdb927;
   font-size: 25px;
@@ -239,33 +222,30 @@ header .fa-chevron-down {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
-.education .container .card {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 80%;
+.education .card {
   border-radius: 15px;
+  overflow: hidden;
 }
-
-.education .container .card .card-body {
-  font-size: 14px;
+.education .card_img {
+  width: 100%;
 }
-
-.education .container .card .card-body h3 {
+.education .card_text {
+  padding: 15px;
+  text-align: center;
+}
+.education .card_text h3 {
   font-size: 22px;
-  color: #fdb927;
+  margin-bottom: 10px;
 }
-
-.education .container .card .card-body p {
-  color: #fdb927;
+.education .card_text p {
+  margin-bottom: 0;
 }
 
 .experience .experience-box h3 {
@@ -274,11 +254,9 @@ header .fa-chevron-down {
   color: #fff;
   border: 2px solid #fff;
 }
-
 .experience .experience-box p {
   color: #fdb927;
 }
-
 .experience .experience-box ul {
   list-style-type: square;
   color: #fdb927;
@@ -287,16 +265,13 @@ header .fa-chevron-down {
 .myprojects {
   text-align: center;
 }
-
 .myprojects h5 {
   font-weight: bold;
 }
-
 .myprojects .carousel-item {
   position: relative;
   height: 600px;
 }
-
 .myprojects .carousel-caption {
   position: absolute;
   left: 0;
@@ -304,11 +279,9 @@ header .fa-chevron-down {
   padding: 40px 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .myprojects .carousel-indicators {
   padding-bottom: 20px;
 }
-
 .myprojects .carousel-indicators button {
   background-color: #fdb927;
 }
@@ -321,19 +294,12 @@ header .fa-chevron-down {
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-
-.myskills .skills-box transition:transform .3s h3 {
-  text-transform: uppercase;
-}
-
 .myskills .skills-box h3 {
   color: #fdb927;
 }
-
 .myskills .skills-box span {
   font-weight: bold;
 }
-
 .myskills .skills-box:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -342,18 +308,15 @@ header .fa-chevron-down {
 .myinterested {
   color: #fff;
 }
-
 .myinterested i {
   padding: 20px;
   font-size: 38px;
   color: #fff;
   text-shadow: 0 0 5px #000;
 }
-
 .myinterested .myinterested-list {
   padding: 20px;
 }
-
 .myinterested .myinterested-text {
   font-size: 18px;
   text-transform: uppercase;
@@ -364,7 +327,7 @@ header .fa-chevron-down {
     font-size: 34px;
   }
   nav .nav-link,
-  nav a {
+nav a {
     font-size: 20px;
   }
   header h1 {
@@ -400,17 +363,16 @@ header .fa-chevron-down {
     font-size: 18px;
   }
 }
-
 @media (min-width: 768px) {
   h2 {
     font-size: 40px;
   }
   nav .nav-link,
-  nav a {
+nav a {
     font-size: 26px;
   }
   nav .nav-link .fa-paperclip,
-  nav a .fa-paperclip {
+nav a .fa-paperclip {
     color: #fdb927;
     font-size: 40px;
   }
@@ -472,13 +434,22 @@ header .fa-chevron-down {
     font-size: 20px;
   }
 }
-
+@media (min-width: 992px) {
+  .education .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (min-width: 1024px) {
   h2 {
     font-size: 32px;
   }
   nav .nav-link,
-  nav a {
+nav a {
     font-size: 16px;
   }
   header .hero-img {
@@ -549,7 +520,6 @@ header .fa-chevron-down {
     font-size: 12px;
   }
 }
-
 @media (min-width: 1200px) {
   h2 {
     font-size: 34px;
@@ -595,5 +565,4 @@ header .fa-chevron-down {
   .myskills span {
     font-size: 14px;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

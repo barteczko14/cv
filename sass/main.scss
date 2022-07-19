@@ -170,24 +170,23 @@ header {
 .education {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
 	align-items: center;
-	.container {
-		.card {
-			margin-left: auto;
-			margin-right: auto;
+	justify-content: center;
+	.card {
+		border-radius: 15px;
+		overflow: hidden;
+		&_img {
+			width: 100%;
+		}
+		&_text {
+			padding: 15px;
 			text-align: center;
-			width: 80%;
-			border-radius: 15px;
-			.card-body {
-				font-size: 14px;
-				h3 {
-					font-size: 22px;
-					color: $gold;
-				}
-				p {
-					color: $gold;
-				}
+			h3 {
+				font-size: 22px;
+				margin-bottom: 10px;
+			}
+			p {
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -241,9 +240,7 @@ header {
 		height: 400px;
 		background-color: $white;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-		transition:transform .3s h3 {
-			text-transform: uppercase;
-		}
+
 		h3 {
 			color: $gold;
 		}
@@ -423,6 +420,15 @@ header {
 		span {
 			font-weight: bold;
 			font-size: 20px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.education {
+		.container {
+			display: flex;
+			justify-content: center;
 		}
 	}
 }
